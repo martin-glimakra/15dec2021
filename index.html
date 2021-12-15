@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="pizzaOchGröt()">Pizza och gröt</button>
+    <script>
+        console.log('test')
+
+
+        // let letter = "";
+        // while (letter !== "X") {
+        // letter = prompt("Type a letter or X to exit:");
+        // }
+
+
+        let pengar = 100
+
+        const pizzaOchGröt = () => {
+            while (pengar >= 30) {
+                if(pengar >= 70){
+                    console.log('köpa pizza')
+                    pengar = pengar - 70
+                }
+                else if(pengar >= 30) {
+                    console.log('köpa gröt')
+                    pengar = pengar -30
+                }
+                else {
+                    console.log('någontig har gått fel')
+                }
+            }
+console.log('pengar', pengar)
+        }
+
+    </script>
+</body>
+</html>
