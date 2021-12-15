@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+<body>
+    <script>
+        
+
+        let martinsDatum = new Date()
+        let day = martinsDatum.getDay()
+
+
+
+        // console.log('martinsDatum', martinsDatum)
+        // console.log(day)
+
+        switch (day) {
+            case 0:
+                day = "söndag";
+                break;
+            case 1:
+                day = "måndag";
+                break;
+            case 2:
+                day = "tisdag";
+                break;
+            case 3:
+                day = "onsdag";
+                break;
+            case 4:
+                day = "torsdag";
+                break;
+            case 5:
+                day = "fredag";
+                break;
+            case 6:
+                day = "lördag";
+            }
+            // console.log(day)
+
+            let gubbArray = [
+                {
+                    namn: 'Torsten',
+                    ålder: 80,
+                    ort: 'Kiruna',
+                    byxor: 'jeans'
+                },
+                {
+                    namn: 'Bosse',
+                    ålder: 90,
+                    ort: 'Kiruna',
+                    byxor: 'chinos'
+                },
+                {
+                    namn: 'Thord',
+                    ålder: 100,
+                    ort: 'Sveg',
+                    byxor: 'chinos'
+                }
+            ]
+
+            let allaÖver80 = gubbArray.filter(gubbe => gubbe.ålder > 80)
+            
+            // let allaÖver80 = gubbArray.filter((gubbe) => {
+           //     return gubbe.ålder > 80})
+
+            //skapa en array med objekt
+            //skapa en swich sats med tre olika alternativ
+            // skapa en variabel vars värde sätts med prompt() eller input
+            // conslole.log() olika data beroende på värdet i variabeln. Bestäm vilken data med filter()
+
+
+
+            console.log('allaÖver80', allaÖver80)
+    </script>
+</body>
+</html>
